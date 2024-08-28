@@ -18,7 +18,13 @@ class _ReceiverState extends State<Receiver> {
     return Scaffold(
       appBar: AppBar(),
       body: Center(
-        child: Text(widget.message),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            const Text("the message :"),
+            Text(widget.message),
+          ],
+        ),
       ),
     );
   }
