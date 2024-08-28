@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:mcs_bab_1/receiver.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -246,7 +247,9 @@ class _HomePageState extends State<HomePage> {
                 ),
                 child: Text(flutterUrl, style: const TextStyle(color: Colors.white),),
               ),
-              onTap: (){},
+              onTap: ()async{
+                await launchUrl(Uri.parse(flutterUrl));
+              },
             ),
           )
         ],
