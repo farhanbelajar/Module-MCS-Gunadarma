@@ -38,8 +38,8 @@ class _HomeScreenState extends State<HomeScreen> {
             itemCount: cats.length,
             shrinkWrap: true,
             physics: const NeverScrollableScrollPhysics(),
-            itemBuilder: (context, index) {
-              Cat cat = cats[index];
+            itemBuilder: (_, index) {
+              CatModel cat = cats[index];
               return Container(
                 margin: const EdgeInsets.symmetric(vertical: 12,horizontal: 18),
                 child: GestureDetector(
@@ -48,7 +48,10 @@ class _HomeScreenState extends State<HomeScreen> {
                       SizedBox(
                         height: MediaQuery.of(context).size.width/4,
                         width: MediaQuery.of(context).size.width/4,
-                        child: Image.network(cat.urlImage, fit: BoxFit.cover,),
+                        child: ClipRRect(
+                          borderRadius: BorderRadius.circular(18),
+                          child: Image.network(cat.urlImage, fit: BoxFit.cover,),
+                        ),
                       ),
                       const SizedBox(width: 14,),
                       Text(cat.name),

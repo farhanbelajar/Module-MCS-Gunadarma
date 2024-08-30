@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:mcs_bab_2/cat_model.dart';
 
 class DetailScreen extends StatefulWidget {
-  Cat cat;
+  CatModel cat;
 
   DetailScreen({super.key, required this.cat,});
 

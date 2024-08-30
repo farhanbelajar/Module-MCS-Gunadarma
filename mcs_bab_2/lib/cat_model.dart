@@ -1,9 +1,9 @@
-class Cat{
+class CatModel{
   String urlImage;
   String name;
   String desc;
 
-  Cat({
+  CatModel({
     required this.urlImage,
     required this.name,
     required this.desc,
