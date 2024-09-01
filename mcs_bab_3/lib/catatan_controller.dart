@@ -41,4 +41,19 @@ class CatatanController extends GetxController{
   void updateWarna3({required int id}) async{
     await DB.updateWarna3(id);
   }
+  //
+  // //empty Tugas 1
+  // void emptyTugas1({required int id}) async{
+  //   await DB.emptyTugas1(id);
+  // }
+  //
+  // //empty Tugas 2
+  // void emptyTugas2({required int id}) async{
+  //   await DB.emptyTugas2(id);
+  // }
+  //
+  // //empty Tugas 3
+  // void emptyTugas3({required int id}) async{
+  //   await DB.emptyTugas3(id);
+  // }
 }
