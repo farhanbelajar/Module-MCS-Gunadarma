@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mcs_bab_5/providers/app_provider.dart';
-import 'package:mcs_bab_5/screens/main_screen.dart';
+import 'package:mcs_bab_5/screens/opening_screen.dart';
 import 'package:provider/provider.dart';
 
 void main() {
@@ -16,7 +16,10 @@ class MyApp extends StatelessWidget {
     return MultiProvider(
       providers: [
         ChangeNotifierProvider<AppProvider>(
-          create: (context) => AppProvider(),
+          create: (context) => AppProvider()
+            ..getTemperature()
+            ..getHumidity()
+            ..getSoilMoisture(),
         )
       ],
       child: MaterialApp(
@@ -26,7 +29,7 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
-        home: const MainScreen()
+        home: const OpeningScreen()
       ),
     );
   }
