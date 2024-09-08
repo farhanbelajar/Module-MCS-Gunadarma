@@ -14,6 +14,7 @@ class MainScreen extends StatelessWidget {
           appBar: AppBar(
             title: Text("Agro Tech" , style: appProvider.whiteRoboto14Bold,),
             centerTitle: true,
+            automaticallyImplyLeading: false,
             backgroundColor: appProvider.mainColor,
           ),
           body: Center(
