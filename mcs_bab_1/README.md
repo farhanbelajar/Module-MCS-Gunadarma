@@ -7,7 +7,33 @@
 Pada praktikum MCS bab 1, praktikan akan diajarkan mengenai widget-widget dasar yang ada pada flutter yang digunakan untuk membentuk suatu halaman aplikasi. Selain itu, praktikan juga akan langsung mengimplementasikan widget-widget tersebut dalam membentuk sebuah aplikasi.
 
 * MaterialApp()
-MaterialApp() merupakan widget paling dasar yang berfungsi sebagai fondasi yang mengatur konfigurasi umum dari aplikasi. Untuk menggunakan widget ini, pengguna harus melakukan import terhadap 'package:flutter/material.dart'. Berikut merupakan struktur dari widget MaterialApp():
+
+  MaterialApp() merupakan widget paling dasar yang berfungsi sebagai fondasi yang mengatur konfigurasi umum dari aplikasi. Untuk menggunakan widget ini, pengguna harus melakukan import terhadap 'package:flutter/material.dart'. Berikut merupakan struktur dari widget MaterialApp():
+```dart
+MaterialApp(
+ title: ...,
+ debugShowCheckedModeBanner: ...,
+ theme: ...,
+ home: ....
+ initialRoute: ...,
+ routes: {...}
+ //dan lain lain
+);
+```
+
+* Scaffold()
+  
+  Scaffold() merupakan widget umum yang digunakan untuk membentuk halaman pada sebuah aplikasi. Widget ini memiliki berbagai macam properti, seperti **appBar:**, **body:**, **floatingActionButton:**, **drawer:**, **bottomNavigationBar:** dan lain-lain. Berikut merupakan struktur dari widget scaffold():
+
+```dart
+Scaffold(
+ appBar: ...,
+ body: ...,
+ floatingActionButton: ...,
+ drawer: ...,
+ bottomNavigationBar: ...,
+)
+```
 
 ## **PRAKTIKUM BAB 1**
 
