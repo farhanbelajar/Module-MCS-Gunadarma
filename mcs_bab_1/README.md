@@ -10,4 +10,4 @@ Pada praktikum MCS bab 1, praktikan akan diajarkan mengenai widget-widget dasar 
 
 Tampilan aplikasi yang akan dibangun:
 
-!(images/gambar-gambar bab 1/halaman aplikasi1.jpeg)
+![images/gambar-gambar bab 1/halaman aplikasi1.jpeg](https://github.com/Rokel15/GUNADARMA-ASCL-MCS/blob/zaidan-dev/images/gambar-gambar%20bab%201/halaman%20aplikasi1.jpeg)
