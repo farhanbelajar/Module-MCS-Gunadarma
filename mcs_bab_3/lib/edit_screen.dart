@@ -111,10 +111,6 @@ class _EditScreenState extends State<EditScreen> {
       floatingActionButton: FloatingActionButton(
         shape: const CircleBorder(),
         backgroundColor: Colors.white,
-        // widget.catatanModel.warna == 0?
-        // const Color(0xff4C4C6D) : widget.catatanModel.warna == 1?
-        // const Color(0xff6F61C0) : widget.catatanModel.warna == 2?
-        // Colors.blue[900] : Colors.pink[500],
         onPressed: () async{
           await DB.catatanDb!.rawUpdate(
             """UPDATE ${DB.catatanDbTable} SET tugas1 = '${tugas1Controller.text}' WHERE id = ?""",

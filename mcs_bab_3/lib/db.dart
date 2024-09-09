@@ -43,11 +43,6 @@ class DB{
     return catatanDb!.delete(catatanDbTable, where: "id = ?", whereArgs: [catatanModel.id]);
   }
 
-  //update warna 0
-  // static updateWarna0(CatatanModel catatanModel) async{
-  //   return catatanDb!.update(DB.catatanDbTable, where: "id = ?", whereArgs: [catatanModel.id]);
-  // }
-  
   //update warna jadi 0
   static updateWarna0(int id) async{
     return await catatanDb!.rawUpdate(
@@ -75,22 +70,4 @@ class DB{
         """UPDATE $catatanDbTable SET warna = 3 WHERE id = ?""", [id]
     );
   }
-
-  // static emptyTugas1(int id) async{
-  //   return await catatanDb!.rawUpdate(
-  //       """UPDATE $catatanDbTable SET tugas1 = '' WHERE id = ?""", [id]
-  //   );
-  // }
-  //
-  // static emptyTugas2(int id) async{
-  //   return await catatanDb!.rawUpdate(
-  //       """UPDATE $catatanDbTable SET tugas2 = '' WHERE id = ?""", [id]
-  //   );
-  // }
-  //
-  // static emptyTugas3(int id) async{
-  //   return await catatanDb!.rawUpdate(
-  //       """UPDATE $catatanDbTable SET tugas3 = '' WHERE id = ?""", [id]
-  //   );
-  // }
 }
