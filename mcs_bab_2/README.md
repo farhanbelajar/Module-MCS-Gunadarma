@@ -1,5 +1,5 @@
-# mcs_bab_2
-
+# **PRAKTIKUM BAB 2**
+## DINAMIS UI 
 A new Flutter project.
 
 ## Getting Started
