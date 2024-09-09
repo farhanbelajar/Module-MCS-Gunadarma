@@ -10,24 +10,35 @@ class ProfileScreen extends StatelessWidget {
     return Consumer<AppProvider>(
       builder: (context, appProvider, child) {
         return Scaffold(
-          appBar: AppBar(title: const Text("Mhs Profile"),),
+          appBar: AppBar(
+            title: const Text("Mhs Profile"),
+            actions: [
+              IconButton(
+                onPressed: () => appProvider.deleteData(context: context),
+                icon: const Icon(Icons.delete),
+              ),
+              const SizedBox(width: 8,)
+            ],
+          ),
           body: SingleChildScrollView(
-            child: Column(
-              children: [
-                Image.file(appProvider.imageProfile!),
+            child: Center(
+              child: Column(
+                children: [
+                  Image.file(appProvider.imageProfile!),
 
-                const SizedBox(height: 20,),
+                  const SizedBox(height: 20,),
 
-                Text("${appProvider.npm!}"),
+                  Text("${appProvider.npm!}"),
 
-                const SizedBox(height: 20,),
+                  const SizedBox(height: 20,),
 
-                Text("${appProvider.name}"),
+                  Text("${appProvider.name}"),
 
-                const SizedBox(height: 20,),
+                  const SizedBox(height: 20,),
 
-                Text("${appProvider.desc}"),
-              ],
+                  Text("${appProvider.desc}"),
+                ],
+              ),
             ),
           )
         );

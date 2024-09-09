@@ -128,10 +128,8 @@ class InputScreen extends StatelessWidget {
                           child: const Icon(Icons.arrow_forward),
                           onTap: () => appProvider.goToProfileScreen(
                             context: context,
-                            image: model.image!,
-                            npm: model.npm!,
-                            name: model.name!,
-                            desc: model.desc!,
+                            index: index,
+                            model: model,
                           ),
                         )
                       ],
@@ -143,7 +141,6 @@ class InputScreen extends StatelessWidget {
           ),
         );
       },
-
     );
   }
 }

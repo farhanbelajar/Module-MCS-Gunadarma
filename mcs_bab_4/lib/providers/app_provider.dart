@@ -14,6 +14,7 @@ class AppProvider extends ChangeNotifier{
   String npmLabel = 'Npm :';
   String nameLabel = 'Name :';
   String descLabel = 'Desc :';
+  int? index;
   io.File? imageProfile;
   int? npm;
   String? name;
@@ -56,17 +57,24 @@ class AppProvider extends ChangeNotifier{
     notifyListeners();
   }
 
+  deleteData({
+    required BuildContext context,
+  }) async{
+    await data.removeAt(index!);
+    Navigator.pop(context);
+    notifyListeners();
+  }
+
   goToProfileScreen({
     required BuildContext context,
-    required io.File image,
-    required int npm,
-    required String name,
-    required String desc,
+    required int index,
+    required Model model,
   }) async{
-    this.imageProfile = await image;
-    this.npm = await npm;
-    this.name = await name;
-    this.desc = await desc;
+    this.index = index;
+    imageProfile = await model.image;
+    npm = await model.npm;
+    name = await model.name;
+    desc = await model.desc;
     Navigator.push(
       context,
       MaterialPageRoute(builder: (context) => const ProfileScreen(),),
