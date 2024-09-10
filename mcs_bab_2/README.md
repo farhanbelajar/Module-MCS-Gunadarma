@@ -90,3 +90,138 @@ List<CatModel> cats = [
 ];
 ```
 Kita membuat data dummy di dalam suatu List. Data di dalam List dibuat dengan bentuk model dari CatModel dan isi dari List dengan memanggil class CatModel() yang mana CatModel() memiliki constructor untuk pengisian data.
+
+Buka file home_screen.dart dan isikan code berikut :
+```dart
+import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:mcs_bab_2/cat_data.dart';
+import 'package:mcs_bab_2/cat_model.dart';
+import 'package:mcs_bab_2/detail_screen.dart';
+
+class HomeScreen extends StatefulWidget {
+  const HomeScreen({super.key});
+
+  @override
+  State<HomeScreen> createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text("Mcs Bab 2", style: TextStyle(color: Colors.white),),
+        backgroundColor: Colors.grey[900],
+      ),
+      body: ListView(
+        children: [
+          const SizedBox(height: 32,),
+          
+          Center(
+            child: Text(
+              "Jenis-jenis Kucing",
+              style: GoogleFonts.roboto(
+                fontSize: 16, fontWeight: FontWeight.w600,
+              ),
+            ),
+          ),
+
+          const SizedBox(height: 24,),
+
+          ListView.builder(
+            itemCount: cats.length,
+            shrinkWrap: true,
+            physics: const NeverScrollableScrollPhysics(),
+            itemBuilder: (_, index) {
+              CatModel cat = cats[index];
+              return Container(
+                margin: const EdgeInsets.symmetric(vertical: 12,horizontal: 18),
+                child: GestureDetector(
+                  child: Row(
+                    children: [
+                      SizedBox(
+                        height: MediaQuery.of(context).size.width/4,
+                        width: MediaQuery.of(context).size.width/4,
+                        child: ClipRRect(
+                          borderRadius: BorderRadius.circular(18),
+                          child: Image.network(cat.urlImage, fit: BoxFit.cover,),
+                        ),
+                      ),
+                      const SizedBox(width: 14,),
+                      Text(cat.name),
+                    ],
+                  ),
+                  onTap: (){
+                    Navigator.push(
+                      context, MaterialPageRoute(builder: (context) {
+                        return DetailScreen(cat: cat);
+                      },),
+                    );
+                  },
+                ),
+              );
+            },
+          )
+        ],
+      ),
+    );
+  }
+}
+```
+ListView.builder() adalah widget yang dapat generate banyak widget di dalamnya secara otomatis sesuai ketersediaan data.
+
+itemCount: cats.length,
+shrinkWrap: true,
+physics: const NeverScrollableScrollPhysics(),
+itemBuilder: (_, index) {
+	//...
+}
+
+ListView.builder() memiliki beberapa properti atau arguments yang harus diisi, itemCount untuk menentukan seberapa banyak data yang ada di dalam List, shrinkWrap untuk menentukan jika tempat dan ukuran dari widget ListView.builder() sudah ditentukan, physics: NeverScrollableScrollPhysics() agar widget ListView.builder() tidak dapat dilakukan scroll dan itemBuilder digunakan untuk membangun widget di dalam ListView.builder(). ListView.builder() di dalam aplikasi ini memiliki panjang sebanyak data yang ada pada variabel cats bertipe List diambil dari file cat_data.dart, bisa dilihat isi argument dari itemCount: adalah cats.length. Deklarasi CatModel cat = cats[index] agar bisa  mengambil data sesuai parameter index agar cukup dengan hanya menulis cat.<nama data>.
+
+itemBuilder di dalam ListView.builder() memiliki return Container(). Container() memiliki child GestureDetector() agar pengguna dapat melakukan sebuah aksi pada widget tersebut. Fungsi dari aksi yang dilakukan pengguna adalah perpindahan halaman untuk melihat detail data kucing. Halaman untuk melihat detail dari data kucing dibuat di class DetailScreen(). Di dalam class DetailScreen() terdapat Constructor untuk meminta data kucing untuk ditampilkan. Data yang dikrim dari class HomeScreen akan dikirim sesuai index. Data detail kucing diminta saat perpindahan halaman menuju DetailScreen() dengan mengisi argumen return DetailScreen(cat: cat);
+
+Class DetailScreen() ditulis di dalam file bernama detail_screen.dart. Buka file detail_screen.dart dan tulis code berikut :
+
+```dart
+import 'package:flutter/material.dart';
+import 'package:mcs_bab_2/cat_model.dart';
+
+class DetailScreen extends StatefulWidget {
+  CatModel cat;
+
+  DetailScreen({super.key, required this.cat,});
+
+  @override
+  State<DetailScreen> createState() => _DetailScreenState();
+}
+
+class _DetailScreenState extends State<DetailScreen> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(),
+      body: ListView(
+        children: [
+          Image.network(widget.cat.urlImage,),
+
+          const SizedBox(height: 18,),
+
+          Container(
+            margin: const EdgeInsets.symmetric(horizontal: 18),
+            child: Text(widget.cat.name),
+          ),
+
+          const SizedBox(height: 18,),
+
+          Container(
+            margin: const EdgeInsets.symmetric(horizontal: 18),
+            child: Text(widget.cat.desc, textAlign: TextAlign.justify,),
+          ),
+        ],
+      ),
+    );
+  }
+}
+```
