@@ -8,10 +8,6 @@ Pada praktikum bab 2 akan membuat ui secara dinamis menggunakan ListView.builder
 
 ## PENJELASAN
 
-Tampilan yang akan dibuat pada bab ini
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<div align="center">
+  <img src="https://github.com/Rokel15/GUNADARMA-ASCL-MCS/blob/main/images/gambar-gambar%20bab%201/halaman%20aplikasi1.jpeg" alt="images/gambar-gambar bab 1/halaman aplikasi1.jpeg" width="300" height="600"/>
+</div>
