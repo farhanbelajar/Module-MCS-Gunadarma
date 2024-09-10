@@ -225,3 +225,29 @@ class _DetailScreenState extends State<DetailScreen> {
   }
 }
 ```
+Halaman detail data kucing dibuat menggunakan StatefulWidget sehingga mempunyai 1 class extend dari State<DetailScreen> berisfta private mempunyai danam class _DetailScreenState(). Class _DetailScreenState() mengambil data kucing untuk ditampilkan dengan cara:
+```dart
+Image.network(widget.cat.urlImage,),
+
+const SizedBox(height: 18,),
+
+Container(
+  margin: const EdgeInsets.symmetric(horizontal: 18),
+  child: Text(widget.cat.name),
+),
+
+const SizedBox(height: 18,),
+
+Container(
+  margin: const EdgeInsets.symmetric(horizontal: 18),
+  child: Text(widget.cat.desc, textAlign: TextAlign.justify,),
+```
+***
+## LAPORAN AWAL (LP)
+1. Jelaskan apa itu dinamis UI!
+2. Jelaskan apa itu data dummy!
+3. Jelaskan apa itu ListView!
+4. Seberapa penting dinamis UI pada pembuatan aplikasi?
+
+## LAPORAN AKHIR (LA)
+1. Berikan kesimpulan pada Bab 2!
