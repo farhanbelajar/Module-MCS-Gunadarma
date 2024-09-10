@@ -8,5 +8,7 @@ Pada praktikum bab 2 akan membuat ui secara dinamis menggunakan ListView.builder
 
 ## PENJELASAN
 <div align="center">
-  <img src="https://github.com/Rokel15/GUNADARMA-ASCL-MCS/blob/angel-dev/images/gambar-gambar%20bab%202/halaman%20awal%20aplikasi%20bab%202.jpeg" width="300" height="600"/>
+  <img src="https://github.com/Rokel15/GUNADARMA-ASCL-MCS/blob/angel-dev/images/gambar-gambar%20bab%202/halaman%20awal%20aplikasi%20bab%202.jpeg" width="300" height="600"/> 
+  <img src="https://github.com/Rokel15/GUNADARMA-ASCL-MCS/blob/angel-dev/images/gambar-gambar%20bab%202/halaman%20detail%20aplikasi%20bab%202.jpeg"
+width="300" height="600"/>
 </div>
