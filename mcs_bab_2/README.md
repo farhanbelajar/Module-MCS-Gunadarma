@@ -243,7 +243,7 @@ Container(
   child: Text(widget.cat.desc, textAlign: TextAlign.justify,),
 ```
 ***
-## LAPORAN AWAL (LP)
+## LAPORAN PENDAHULUAN (LP)
 1. Jelaskan apa itu dinamis UI!
 2. Jelaskan apa itu data dummy!
 3. Jelaskan apa itu ListView!
