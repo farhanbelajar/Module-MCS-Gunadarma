@@ -26,7 +26,7 @@ class MainScreen extends StatelessWidget {
                 ReadField(
                   result: appProvider.field1model!.field1,
                   color: appProvider.mainColor,
-                  image: appProvider.thermoMeter,
+                  image: appProvider.thermoMeterImage,
                 ),
 
                 const SizedBox(height: 20,),
@@ -35,7 +35,7 @@ class MainScreen extends StatelessWidget {
                 ReadField(
                   result: appProvider.field2model!.field2,
                   color: appProvider.mainColor,
-                  image: appProvider.humiditySensor,
+                  image: appProvider.humiditySensorImage,
                 ),
                 // Container(
                 //   width: double.infinity,
@@ -76,7 +76,7 @@ class MainScreen extends StatelessWidget {
                 ReadField(
                   result: appProvider.field3model!.field3,
                   color: appProvider.mainColor,
-                  image: appProvider.soilAnalysis,
+                  image: appProvider.soilAnalysisImage,
                 ),
               ],
             ),
