@@ -197,4 +197,7 @@ void sendUIDToServer(String uid) {
 2. Menampilkan respon dari server di Serial Monitor.
 3. Memeriksa status koneksi Wi-Fi sebelum melakukan request.
 
-
+##INSTALASI
+1. Install library yang diperlukan: WiFi, HTTPClient, SPI, dan MFRC522 di Arduino IDE.
+2. Upload kode ke board ESP32 menggunakan Arduino IDE.
+3. Hubungkan modul RFID-RC522 ke pin yang sesuai dengan pengaturan di kode.
