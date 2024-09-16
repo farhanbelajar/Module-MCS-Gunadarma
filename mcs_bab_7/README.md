@@ -155,11 +155,11 @@ Mengirimkan HTTP GET request untuk mendapatkan status servo dari server.
 Menggerakkan servo berdasarkan status yang diterima.
 Menunggu selama 5 detik sebelum melakukan pengecekan ulang.
 
-INSTALASI
+## instalasi
 1. Install library yang diperlukan: WiFi, HTTPClient, dan ESP32Servo di Arduino IDE.
 2. Upload kode ke board ESP32 menggunakan Arduino IDE.
 3. Hubungkan servo motor ke pin yang sesuai dengan pengaturan di kode.
-PENGATURAN URL SERVER
+## Pengaturan URL Server
 Ganti variabel serverURL sesuai dengan endpoint server yang kamu gunakan.
 ```
 const char* serverURL = "https://srvo-cntrllr-production.up.railway.app/servo/status";
