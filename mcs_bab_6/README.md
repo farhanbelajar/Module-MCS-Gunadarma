@@ -97,7 +97,7 @@ void sendUIDToServer(String uid) {
   }
 }
 ```
-##Inklusi Library:
+## Inklusi Library:
 ```
 #include <WiFi.h>
 #include <HTTPClient.h>
@@ -106,7 +106,7 @@ void sendUIDToServer(String uid) {
 ```
 Library ini diperlukan untuk menghubungkan ESP32 ke Wi-Fi, melakukan HTTP request, dan berkomunikasi dengan modul RFID-RC522 melalui SPI.
 
-##Definisi Pin dan Koneksi Wi-Fi:
+## Definisi Pin dan Koneksi Wi-Fi:
 ```
 #define SS_PIN  5   // ESP32 pin GPIO5 
 #define RST_PIN 27  // ESP32 pin GPIO27 
@@ -116,7 +116,7 @@ const char* password = "farhan08"; // Ganti dengan password Wi-Fi kamu
 ```
 1. SS_PIN dan RST_PIN adalah pin yang digunakan untuk komunikasi SPI dengan modul RFID.
 2. Gantilah ssid dan password dengan kredensial Wi-Fi kamu.
-##Inisialisasi:
+## Inisialisasi:
 ```
 void setup() {
   Serial.begin(9600);
@@ -139,7 +139,7 @@ void setup() {
 1. Menghubungkan ESP32 ke jaringan Wi-Fi.
 2. Inisialisasi SPI bus dan modul RFID-RC522.
 3. Menunggu hingga ESP32 terhubung ke Wi-Fi.
-##Loop:
+## Loop:
 ```
 void loop() {
   if (rfid.PICC_IsNewCardPresent()) { // new tag is available
@@ -170,7 +170,7 @@ void loop() {
 1. Memeriksa apakah ada tag RFID baru yang tersedia.
 2. Membaca UID dari tag dan mengirimkannya ke server.
 3. Menghentikan komunikasi dengan tag RFID setelah data dikirim.
-##Fungsi sendUIDToServer:
+## Fungsi sendUIDToServer:
 ```
 void sendUIDToServer(String uid) {
   if (WiFi.status() == WL_CONNECTED) {
@@ -197,7 +197,7 @@ void sendUIDToServer(String uid) {
 2. Menampilkan respon dari server di Serial Monitor.
 3. Memeriksa status koneksi Wi-Fi sebelum melakukan request.
 
-##INSTALASI
+## INSTALASI
 1. Install library yang diperlukan: WiFi, HTTPClient, SPI, dan MFRC522 di Arduino IDE.
 2. Upload kode ke board ESP32 menggunakan Arduino IDE.
 3. Hubungkan modul RFID-RC522 ke pin yang sesuai dengan pengaturan di kode.
