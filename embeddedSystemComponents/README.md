@@ -1,14 +1,6 @@
 # Proyek ESP32: Pembaca RFID dengan Kontrol Servo Berbasis HTTP
 
 Proyek ini menggunakan **ESP32**, **RFID-RC522**, dan **Servo Motor** untuk membaca tag RFID dan mengontrol pergerakan servo berdasarkan status yang diterima dari server melalui HTTP request.
-## Demo Video
-
-<div align="center">
-  <a href="https://github.com/Rokel15/GUNADARMA-ASCL-MCS/blob/main/images/skematik%20dan%20cara%20install%20library%20esp32/Rfid_Servo.mp4" target="_blank">
-    <img src="https://github.com/Rokel15/GUNADARMA-ASCL-MCS/blob/main/images/video_thumbnail.jpg" alt="Watch the video" width="578" height="268"/>
-  </a>
-</div>
-
 
 ## Fitur
 1. Membaca UID dari tag RFID/NFC menggunakan **RFID-RC522**.
