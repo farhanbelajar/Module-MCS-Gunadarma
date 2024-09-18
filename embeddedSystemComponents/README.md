@@ -20,12 +20,20 @@ Proyek ini menggunakan **ESP32**, **RFID-RC522**, dan **Servo Motor** untuk memb
 
 ## INSTALASI
 1. Tambahkan URL Board Manager
+   <div align="center">
+  <br>
+  <img src="https://github.com/Rokel15/GUNADARMA-ASCL-MCS/blob/main/images/skematik%20dan%20cara%20install%20library%20esp32/install%20esp32%20(1).jpeg" width="578" height="268"/> 
+</div>
    - Buka Arduino IDE.
    - Buka menu File > Preferences.
    - Tambahkan URL berikut di bagian Additional Boards Manager URLs:
      ```
      https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
      ```
+     <div align="center">
+  <br>
+  <img src="https://github.com/Rokel15/GUNADARMA-ASCL-MCS/blob/main/images/skematik%20dan%20cara%20install%20library%20esp32/install%20esp32%20(2).jpeg" width="578" height="268"/> 
+</div>
 3. Install library yang diperlukan: WiFi, HTTPClient, SPI, MFRC522, dan ESP32Servo di Arduino IDE.
 4. Upload kode ke board ESP32 menggunakan Arduino IDE.
 5. Hubungkan modul RFID-RC522 dan servo motor ke pin yang sesuai dengan pengaturan di kode.
@@ -202,10 +210,6 @@ request menggunakan fungsi sendUIDToServer().
 Status servo diperiksa dari server menggunakan HTTP GET request. Jika status servo adalah 1, servo akan bergerak ke posisi CCW, dan jika 0, 
 servo akan bergerak ke posisi CW.
 
-## INSTALASI
-1. Install library yang diperlukan: WiFi, HTTPClient, SPI, MFRC522, dan ESP32Servo di Arduino IDE.
-2. Upload kode ke board ESP32 menggunakan Arduino IDE.
-3. Hubungkan modul RFID-RC522 dan servo motor ke pin yang sesuai dengan pengaturan di kode.
 ## PENGATURAN KONEKSI WI-FI DAN SERVER
 1. Ganti variabel ssid dan password dengan kredensial Wi-Fi yang kamu gunakan.
 2. Ganti serverURL dan endpoint lain jika server yang digunakan berbeda.
