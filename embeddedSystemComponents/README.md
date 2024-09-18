@@ -26,6 +26,11 @@ Proyek ini menggunakan **ESP32**, **RFID-RC522**, dan **Servo Motor** untuk memb
   <img src="https://github.com/Rokel15/GUNADARMA-ASCL-MCS/blob/main/images/skematik%20dan%20cara%20install%20library%20esp32/table%20pin%20(servo_rfid).jpeg" width="578" height="268"/> 
 </div>
 
+<div align="center">
+  <br>
+  <img src="https://github.com/Rokel15/GUNADARMA-ASCL-MCS/blob/main/images/skematik%20dan%20cara%20install%20library%20esp32/Gambaran%20Umum.png" width="578" height="268"/> 
+</div>
+
 ## INSTALASI
 1. Install library yang diperlukan: WiFi, HTTPClient, SPI, MFRC522, dan ESP32Servo di Arduino IDE.
 2. Upload kode ke board ESP32 menggunakan Arduino IDE.
