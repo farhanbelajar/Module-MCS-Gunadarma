@@ -37,9 +37,9 @@ Proyek ini memanfaatkan ESP32, RFID-RC522, dan Servo Motor untuk membaca tag RFI
   <img src="https://github.com/Rokel15/GUNADARMA-ASCL-MCS/blob/main/images/skematik%20dan%20cara%20install%20library%20esp32/install%20esp32%20(2).jpeg" width="478" height="368"/> 
 </div>
 3. Install BOARDS MANAGER ESP32
-<div align="center"><br>
-  <img src="https://github.com/Rokel15/GUNADARMA-ASCL-MCS/blob/main/images/skematik%20dan%20cara%20install%20library%20esp32/install%20esp32%20(3).jpeg" width="478" height="368"/> 
-</div>
+        <div align="center"><br>
+          <img src="https://github.com/Rokel15/GUNADARMA-ASCL-MCS/blob/main/images/skematik%20dan%20cara%20install%20library%20esp32/install%20esp32%20(3).jpeg" width="478" height="368"/> 
+        </div>
     - Buka Arduino IDE.<br>
     - Pergi ke **Tools > Board > Boards Manager**.<br>
     - Cari **ESP32** di kolom pencarian.<br>
