@@ -18,20 +18,6 @@ Proyek ini menggunakan **ESP32**, **RFID-RC522**, dan **Servo Motor** untuk memb
 1. Install library yang diperlukan: WiFi, HTTPClient, SPI, MFRC522, dan ESP32Servo di Arduino IDE.
 2. Upload kode ke board ESP32 menggunakan Arduino IDE.
 3. Hubungkan modul RFID-RC522 dan servo motor ke pin yang sesuai dengan pengaturan di kode.
-   Berikut adalah tabel pin untuk Servo dan RFID yang digunakan dalam kode ESP32:
-
-Komponen	Nama Pin	Pin ESP32	Keterangan
-Servo	Signal	GPIO 12	Pin untuk sinyal kontrol servo
-RFID	SS (SDA)	GPIO 5	Pin untuk Slave Select (SS)
-RFID	RST	GPIO 27	Pin untuk Reset RFID
-RFID	MOSI	GPIO 23	Pin untuk Master Out Slave In
-RFID	MISO	GPIO 19	Pin untuk Master In Slave Out
-RFID	SCK	GPIO 18	Pin untuk Serial Clock
-RFID	GND	GND	Ground
-RFID	3.3V	3.3V	Tegangan 3.3V
-Penjelasan:
-Servo: Dihubungkan ke GPIO 12 yang mengontrol arah gerakan servo (sudut 0 untuk CCW dan sudut 180 untuk CW).
-RFID: Menggunakan protokol SPI, sehingga pin SS (Slave Select) dihubungkan ke GPIO 5, RST (Reset) ke GPIO 27, dan pin SPI lainnya seperti MOSI, MISO, dan SCK ke pin standar SPI pada ESP32.
 ## PENGATURAN KONEKSI WI-FI DAN SERVER
 1. Ganti variabel ssid dan password dengan kredensial Wi-Fi yang kamu gunakan.
 2. Ganti serverURL dan endpoint lain jika server yang digunakan berbeda.
