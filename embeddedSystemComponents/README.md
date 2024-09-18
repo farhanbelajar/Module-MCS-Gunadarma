@@ -232,8 +232,8 @@ servo akan bergerak ke posisi CW.
 ## PENGATURAN KONEKSI WI-FI DAN SERVER
 1. Ganti variabel ssid dan password dengan kredensial Wi-Fi yang kamu gunakan.
 2. Ganti serverURL dan endpoint lain jika server yang digunakan berbeda.
+```
 const char* ssid = "Hai pi";
 const char* password = "farhan08";
 const char* serverURL = "https://srvo-cntrllr-production.up.railway.app/servo/status";
-
-coba rapihkan ini biar kesusun dengan bair centernya pas gambarnya tidak kegedean
+```
