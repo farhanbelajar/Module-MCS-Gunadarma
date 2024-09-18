@@ -27,11 +27,9 @@ Proyek ini menggunakan **ESP32**, **RFID-RC522**, dan **Servo Motor** untuk memb
    - Buka Arduino IDE.
    - Buka menu File > Preferences.
    - Tambahkan URL berikut di bagian Additional Boards Manager URLs:
-  
+```  
 https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
-
-     dnsdnbdnb
-     <div align="center">
+```
   <br>
   <img src="https://github.com/Rokel15/GUNADARMA-ASCL-MCS/blob/main/images/skematik%20dan%20cara%20install%20library%20esp32/install%20esp32%20(2).jpeg" width="578" height="268"/> 
 </div>
