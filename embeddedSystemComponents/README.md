@@ -14,15 +14,16 @@ Proyek ini menggunakan **ESP32**, **RFID-RC522**, dan **Servo Motor** untuk memb
 - **Wi-Fi**
 - **HTTP Client untuk komunikasi dengan server**
 
+
 ## Skematik Dan Pin pada ESP32
 <div align="center">
   <br>
   <img src="https://github.com/Rokel15/GUNADARMA-ASCL-MCS/blob/main/images/skematik%20dan%20cara%20install%20library%20esp32/skematik_servo_rfid.jpeg" width="578" height="268"/> 
 </div>
-snbsdbcbncsnbcsnc
+
 <div align="center">
   <br>
-  <img src="images/skematik dan cara install library esp32/table pin (servo_rfid).jpeg](https://github.com/Rokel15/GUNADARMA-ASCL-MCS/blob/main/images/skematik%20dan%20cara%20install%20library%20esp32/table%20pin%20(servo_rfid).jpeg" width="578" height="268"/> 
+  <img src="https://github.com/Rokel15/GUNADARMA-ASCL-MCS/blob/main/images/skematik%20dan%20cara%20install%20library%20esp32/table%20pin%20(servo_rfid).jpeg" width="578" height="268"/> 
 </div>
 
 ## INSTALASI
