@@ -82,8 +82,6 @@ const char* serverURL = "https://srvo-cntrllr-production.up.railway.app/servo/st
 2. Ketika tag RFID/NFC terdeteksi, UID dari tag akan dikirimkan ke server melalui HTTP POST request.
 3. Servo akan bergerak berdasarkan status yang diterima dari server menggunakan HTTP GET request.
 
-## Penjelasan Kode
-
 ### Kode Utama
 ```cpp
 #include <WiFi.h>
