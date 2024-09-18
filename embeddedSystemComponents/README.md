@@ -1,10 +1,9 @@
 # Proyek ESP32: Pembaca RFID dengan Kontrol Servo Berbasis HTTP
 
 Proyek ini menggunakan **ESP32**, **RFID-RC522**, dan **Servo Motor** untuk membaca tag RFID dan mengontrol pergerakan servo berdasarkan status yang diterima dari server melalui HTTP request.
-
 <div align="center">
   <br>
-  <img src="https://github.com/Rokel15/GUNADARMA-ASCL-MCS/blob/main/images/skematik%20dan%20cara%20install%20library%20esp32/Gambaran%20Umum.png" width="600" height="300"/> 
+  <img src="https://github.com/Rokel15/GUNADARMA-ASCL-MCS/blob/main/images/skematik%20dan%20cara%20install%20library%20esp32/Gambaran%20Umum.png"/> 
 </div>
 
 ## Fitur
@@ -22,24 +21,34 @@ Proyek ini menggunakan **ESP32**, **RFID-RC522**, dan **Servo Motor** untuk memb
 ## INSTALASI
 1. Tambahkan URL Board Manager
    <div align="center">
-     <br>
-     <img src="https://github.com/Rokel15/GUNADARMA-ASCL-MCS/blob/main/images/skematik%20dan%20cara%20install%20library%20esp32/install%20esp32%20(1).jpeg" width="500" height="300"/> 
-   </div>
-   
+  <br>
+  <img src="https://github.com/Rokel15/GUNADARMA-ASCL-MCS/blob/main/images/skematik%20dan%20cara%20install%20library%20esp32/install%20esp32%20(1).jpeg" width="578" height="268"/> 
+</div>
    - Buka Arduino IDE.
    - Buka menu File > Preferences.
    - Tambahkan URL berikut di bagian Additional Boards Manager URLs:
-   
-   ```plaintext
-   https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
-<div align="center"> <br> <img src="https://github.com/Rokel15/GUNADARMA-ASCL-MCS/blob/main/images/skematik%20dan%20cara%20install%20library%20esp32/install%20esp32%20(2).jpeg" width="500" height="300"/> </div>
-Install library yang diperlukan: WiFi, HTTPClient, SPI, MFRC522, dan ESP32Servo di Arduino IDE.
-Upload kode ke board ESP32 menggunakan Arduino IDE.
-Hubungkan modul RFID-RC522 dan servo motor ke pin yang sesuai dengan pengaturan di kode.
-Skematik Dan Pin pada ESP32
-<div align="center"> <br> <img src="https://github.com/Rokel15/GUNADARMA-ASCL-MCS/blob/main/images/skematik%20dan%20cara%20install%20library%20esp32/skematik_servo_rfid.jpeg" width="700" height="350"/> </div>
-PIN ESP32
-<div align="center"> <br> <img src="https://github.com/Rokel15/GUNADARMA-ASCL-MCS/blob/main/images/skematik%20dan%20cara%20install%20library%20esp32/table%20pin%20(servo_rfid).jpeg" width="500" height="250"/> </div>
+  
+https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
+
+     dnsdnbdnb
+     <div align="center">
+  <br>
+  <img src="https://github.com/Rokel15/GUNADARMA-ASCL-MCS/blob/main/images/skematik%20dan%20cara%20install%20library%20esp32/install%20esp32%20(2).jpeg" width="578" height="268"/> 
+</div>
+3. Install library yang diperlukan: WiFi, HTTPClient, SPI, MFRC522, dan ESP32Servo di Arduino IDE.
+4. Upload kode ke board ESP32 menggunakan Arduino IDE.
+5. Hubungkan modul RFID-RC522 dan servo motor ke pin yang sesuai dengan pengaturan di kode.
+   ## Skematik Dan Pin pada ESP32
+<div align="center">
+  <br>
+  <img src="https://github.com/Rokel15/GUNADARMA-ASCL-MCS/blob/main/images/skematik%20dan%20cara%20install%20library%20esp32/skematik_servo_rfid.jpeg" width="778" height="368"/> 
+</div>
+
+## PIN EP32
+<div align="center">
+  <br>
+  <img src="https://github.com/Rokel15/GUNADARMA-ASCL-MCS/blob/main/images/skematik%20dan%20cara%20install%20library%20esp32/table%20pin%20(servo_rfid).jpeg" width="578" height="268"/> 
+</div>
 
 ## PENGATURAN KONEKSI WI-FI DAN SERVER
 1. Ganti variabel ssid dan password dengan kredensial Wi-Fi yang kamu gunakan.
@@ -207,3 +216,5 @@ servo akan bergerak ke posisi CW.
 const char* ssid = "Hai pi";
 const char* password = "farhan08";
 const char* serverURL = "https://srvo-cntrllr-production.up.railway.app/servo/status";
+
+coba rapihkan ini biar kesusun dengan bair centernya pas gambarnya tidak kegedean
