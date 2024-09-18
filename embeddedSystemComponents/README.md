@@ -4,7 +4,7 @@ Proyek ini menggunakan **ESP32**, **RFID-RC522**, dan **Servo Motor** untuk memb
 ## Demo Video
 
 <div align="center">
-  <a href="https://github.com/Rokel15/GUNADARMA-ASCL-MCS/blob/main/assets/demo_video.mp4" target="_blank">
+  <a href="https://github.com/Rokel15/GUNADARMA-ASCL-MCS/blob/main/images/skematik%20dan%20cara%20install%20library%20esp32/Rfid_Servo.mp4" target="_blank">
     <img src="https://github.com/Rokel15/GUNADARMA-ASCL-MCS/blob/main/images/video_thumbnail.jpg" alt="Watch the video" width="578" height="268"/>
   </a>
 </div>
