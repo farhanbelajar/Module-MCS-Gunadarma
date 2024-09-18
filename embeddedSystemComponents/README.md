@@ -85,9 +85,8 @@ const char* serverURL = "https://srvo-cntrllr-production.up.railway.app/servo/st
 ## Penjelasan Kode
 
 ### Kode Utama
-
-cpp
-  ```
+    cpp
+    ```
     #include <WiFi.h>
     #include <HTTPClient.h>
     #include <SPI.h>
@@ -208,6 +207,7 @@ cpp
       }
     }
     ```
+
 ## Penjelasan
 ### Inklusi Library:
 
