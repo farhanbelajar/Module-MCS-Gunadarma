@@ -49,7 +49,7 @@ Proyek ini memanfaatkan ESP32, RFID-RC522, dan Servo Motor untuk membaca tag RFI
 
 ✅ **Pilih** `Other Version 2.0.14` dari daftar pilihan.
 
-✅ **Klik** `Install` untuk menginstal board ESP32.
+✅ **Klik** `Install` untuk menginstal board ESP32.<br?
 3. Install library yang diperlukan: WiFi, HTTPClient, SPI, MFRC522, dan ESP32Servo di Arduino IDE.<br>
 https://github.com/Rokel15/GUNADARMA-ASCL-MCS/blob/main/embeddedSystemComponents/library.zip <br>
 4. Upload kode ke board ESP32 menggunakan Arduino IDE.<br>
