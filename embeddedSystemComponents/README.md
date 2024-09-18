@@ -15,7 +15,7 @@ Proyek ini menggunakan **ESP32**, **RFID-RC522**, dan **Servo Motor** untuk memb
 - **HTTP Client untuk komunikasi dengan server**
 
 ## Skematik Dan Pin pada ESP32
-![Skematik Servo dan RFID](images/skematik%20dan%20cara%20install%20library%20esp32/skematik_servo_rfid.jpeg)
+![skematik_servo_rfid.jpeg](images/skematik dan cara install library esp32/skematik_servo_rfid.jpeg)
 
 
 ## INSTALASI
