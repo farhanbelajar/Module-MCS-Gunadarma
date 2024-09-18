@@ -3,7 +3,7 @@
 Proyek ini menggunakan **ESP32**, **RFID-RC522**, dan **Servo Motor** untuk membaca tag RFID dan mengontrol pergerakan servo berdasarkan status yang diterima dari server melalui HTTP request.
 <div align="center">
   <br>
-  <img src="https://github.com/Rokel15/GUNADARMA-ASCL-MCS/blob/main/images/skematik%20dan%20cara%20install%20library%20esp32/Gambaran%20Umum.png"  width="478" height="168"/> 
+  <img src="https://github.com/Rokel15/GUNADARMA-ASCL-MCS/blob/main/images/skematik%20dan%20cara%20install%20library%20esp32/Gambaran%20Umum.png"  width="478" height="468"/> 
 </div>
 
 ## Fitur
