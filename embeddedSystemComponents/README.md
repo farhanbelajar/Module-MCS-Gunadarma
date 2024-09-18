@@ -14,6 +14,19 @@ Proyek ini menggunakan **ESP32**, **RFID-RC522**, dan **Servo Motor** untuk memb
 - **Wi-Fi**
 - **HTTP Client untuk komunikasi dengan server**
 
+## INSTALASI
+1. Install library yang diperlukan: WiFi, HTTPClient, SPI, MFRC522, dan ESP32Servo di Arduino IDE.
+2. Upload kode ke board ESP32 menggunakan Arduino IDE.
+3. Hubungkan modul RFID-RC522 dan servo motor ke pin yang sesuai dengan pengaturan di kode.
+## PENGATURAN KONEKSI WI-FI DAN SERVER
+1. Ganti variabel ssid dan password dengan kredensial Wi-Fi yang kamu gunakan.
+2. Ganti serverURL dan endpoint lain jika server yang digunakan berbeda.
+```
+const char* ssid = "Hai pi";
+const char* password = "farhan08";
+const char* serverURL = "https://srvo-cntrllr-production.up.railway.app/servo/status";
+```
+
 ## Cara Kerja
 1. ESP32 terhubung ke jaringan Wi-Fi.
 2. Ketika tag RFID/NFC terdeteksi, UID dari tag akan dikirimkan ke server melalui HTTP POST request.
