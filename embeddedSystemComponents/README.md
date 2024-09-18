@@ -1,6 +1,10 @@
 # Proyek ESP32: Pembaca RFID dengan Kontrol Servo Berbasis HTTP
 
 Proyek ini menggunakan **ESP32**, **RFID-RC522**, dan **Servo Motor** untuk membaca tag RFID dan mengontrol pergerakan servo berdasarkan status yang diterima dari server melalui HTTP request.
+<div align="center">
+  <br>
+  <img src="https://github.com/Rokel15/GUNADARMA-ASCL-MCS/blob/main/images/skematik%20dan%20cara%20install%20library%20esp32/Gambaran%20Umum.png"/> 
+</div>
 
 ## Fitur
 1. Membaca UID dari tag RFID/NFC menggunakan **RFID-RC522**.
@@ -14,27 +18,20 @@ Proyek ini menggunakan **ESP32**, **RFID-RC522**, dan **Servo Motor** untuk memb
 - **Wi-Fi**
 - **HTTP Client untuk komunikasi dengan server**
 
-
-## Skematik Dan Pin pada ESP32
-<div align="center">
-  <br>
-  <img src="https://github.com/Rokel15/GUNADARMA-ASCL-MCS/blob/main/images/skematik%20dan%20cara%20install%20library%20esp32/skematik_servo_rfid.jpeg" width="578" height="268"/> 
-</div>
-
-<div align="center">
-  <br>
-  <img src="https://github.com/Rokel15/GUNADARMA-ASCL-MCS/blob/main/images/skematik%20dan%20cara%20install%20library%20esp32/table%20pin%20(servo_rfid).jpeg" width="578" height="268"/> 
-</div>
-
-<div align="center">
-  <br>
-  <img src="https://github.com/Rokel15/GUNADARMA-ASCL-MCS/blob/main/images/skematik%20dan%20cara%20install%20library%20esp32/Gambaran%20Umum.png" width="578" height="268"/> 
-</div>
-
 ## INSTALASI
 1. Install library yang diperlukan: WiFi, HTTPClient, SPI, MFRC522, dan ESP32Servo di Arduino IDE.
 2. Upload kode ke board ESP32 menggunakan Arduino IDE.
 3. Hubungkan modul RFID-RC522 dan servo motor ke pin yang sesuai dengan pengaturan di kode.
+   ## Skematik Dan Pin pada ESP32
+<div align="center">
+  <br>
+  <img src="https://github.com/Rokel15/GUNADARMA-ASCL-MCS/blob/main/images/skematik%20dan%20cara%20install%20library%20esp32/skematik_servo_rfid.jpeg" width="578" height="268"/> 
+</div>
+## Pin Pada ESP32
+<div align="center">
+  <br>
+  <img src="https://github.com/Rokel15/GUNADARMA-ASCL-MCS/blob/main/images/skematik%20dan%20cara%20install%20library%20esp32/table%20pin%20(servo_rfid).jpeg" width="578" height="268"/> 
+</div>
 
 ## PENGATURAN KONEKSI WI-FI DAN SERVER
 1. Ganti variabel ssid dan password dengan kredensial Wi-Fi yang kamu gunakan.
