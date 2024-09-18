@@ -40,22 +40,26 @@ Skematik Dan Pin pada ESP32
 <div align="center"> <br> <img src="https://github.com/Rokel15/GUNADARMA-ASCL-MCS/blob/main/images/skematik%20dan%20cara%20install%20library%20esp32/skematik_servo_rfid.jpeg" width="700" height="350"/> </div>
 PIN ESP32
 <div align="center"> <br> <img src="https://github.com/Rokel15/GUNADARMA-ASCL-MCS/blob/main/images/skematik%20dan%20cara%20install%20library%20esp32/table%20pin%20(servo_rfid).jpeg" width="500" height="250"/> </div>
-PENGATURAN KONEKSI WI-FI DAN SERVER
-Ganti variabel ssid dan password dengan kredensial Wi-Fi yang kamu gunakan.
-Ganti serverURL dan endpoint lain jika server yang digunakan berbeda.
-cpp
-Salin kode
+
+## PENGATURAN KONEKSI WI-FI DAN SERVER
+1. Ganti variabel ssid dan password dengan kredensial Wi-Fi yang kamu gunakan.
+2. Ganti serverURL dan endpoint lain jika server yang digunakan berbeda.
+
 const char* ssid = "Hai pi";
 const char* password = "farhan08";
 const char* serverURL = "https://srvo-cntrllr-production.up.railway.app/servo/status";
-Cara Kerja
-ESP32 terhubung ke jaringan Wi-Fi.
-Ketika tag RFID/NFC terdeteksi, UID dari tag akan dikirimkan ke server melalui HTTP POST request.
-Servo akan bergerak berdasarkan status yang diterima dari server menggunakan HTTP GET request.
-Penjelasan Kode
-Kode Utama
+
+
+## Cara Kerja
+1. ESP32 terhubung ke jaringan Wi-Fi.
+2. Ketika tag RFID/NFC terdeteksi, UID dari tag akan dikirimkan ke server melalui HTTP POST request.
+3. Servo akan bergerak berdasarkan status yang diterima dari server menggunakan HTTP GET request.
+
+## Penjelasan Kode
+
+### Kode Utama
+
 cpp
-Salin kode
 #include <WiFi.h>
 #include <HTTPClient.h>
 #include <SPI.h>
@@ -98,8 +102,6 @@ void loop() {
       MFRC522::PICC_Type piccType = rfid.PICC_GetType(rfid.uid.sak);
       Serial.print("RFID/NFC Tag Type: ");
       Serial.println(rfid.PICC_GetTypeName(piccType));
-
-      // Print UID in Serial Monitor in hex format
 
       // Print UID in Serial Monitor in hex format
       String uidStr = "";
@@ -177,7 +179,7 @@ void checkServoStatus() {
     Serial.println("WiFi Disconnected");
   }
 }
-```
+
 ## Penjelasan
 ### Inklusi Library:
 
@@ -202,9 +204,6 @@ servo akan bergerak ke posisi CW.
 ## PENGATURAN KONEKSI WI-FI DAN SERVER
 1. Ganti variabel ssid dan password dengan kredensial Wi-Fi yang kamu gunakan.
 2. Ganti serverURL dan endpoint lain jika server yang digunakan berbeda.
-```
 const char* ssid = "Hai pi";
 const char* password = "farhan08";
 const char* serverURL = "https://srvo-cntrllr-production.up.railway.app/servo/status";
-```
-
