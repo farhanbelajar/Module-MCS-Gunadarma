@@ -178,7 +178,7 @@ ProfileScreen menggunakan Navigator.push()
 
 <br><br>
 Selanjutnya tambahkan baris code pada **_file input_screen.dart_** 
-```
+``` dart
 import 'package:flutter/material.dart';
 import 'package:mcs_bab_4/models/model.dart';
 import 'package:mcs_bab_4/providers/app_provider.dart';
@@ -386,6 +386,44 @@ class ProfileScreen extends StatelessWidget {
 
 File profile_screen.dart ini memiliki fungsi utama yang sama persis dengan input_screen yaitu hanya menangani tampilan dari program. Pada file ini akan menampilkan detail dari data yang dibawa saat berpindah halaman dari input_screen ke profile_screen. Sebagai consumer dari AppProvider, dapat dilihat tidak ada penulisan proses logika pada file ini. Logika untuk membawa data list berdasarkan index dari halaman satu ke halaman lain sudah di tangani sepenuhnya oleh AppProvider. File ini hanya perlu memanggil property yang berisi data yang sudah di bawa.
 
+<br><br>
+Ubahlah kode pada **_file main.dart_**
+``` dart
+import 'package:flutter/material.dart';
+import 'package:mcs_bab_4/providers/app_provider.dart';
+import 'package:mcs_bab_4/screens/input_screen.dart';
+import 'package:provider/provider.dart';
+
+void main(){
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  // This widget is the root of your application.
+  @override
+  Widget build(BuildContext context) {
+    return MultiProvider(
+      providers: [
+        ChangeNotifierProvider(
+          create: (context) => AppProvider(),
+        ),
+      ],
+      child: MaterialApp(
+        title: 'State Management Provider',
+        debugShowCheckedModeBanner: false,
+        theme: ThemeData(
+          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+          useMaterial3: true,
+        ),
+        home: const InputScreen(),
+      ),
+    );
+  }
+}
+```
+Seperti pada project flutter lainnya. File main.dart merupakan file utama yang akan dijalankan pertama kali ketika program dieksekusi. Jika pada project sebelumnya method widget build yang menangani rendering widget mengembalikan Widget MaterialApp, pada project ini yang dikembalikan adalah widget MultiProvider yang memungkinkan penggunaan beberapa provider. Menggunakan parameter Providers untuk mendefinisikan provider yang akan digunakan dalam bentuk list. Dalam kasus ini didefinisikan ChangeNotifierProvider yang merupakan provider yang akan menangani ChangeNotifier yang sudah digunakan pada saat membuat method. ChangeNotifierProvider menyediakan instance dari class AppProvider yang akan digunakan pada aplikasi sebagai state management.
 
 ***
 ## LAPORAN PENDAHULUAN (LP)
