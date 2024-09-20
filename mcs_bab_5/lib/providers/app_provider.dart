@@ -21,10 +21,9 @@ class AppProvider extends ChangeNotifier {
   Color mainColor = const Color(0xff36725D);
   String loremIpsum =
   "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.";
-  String thermoMeter = "images/thermometer.png";
-  String humiditySensor = "images/humidity-sensor.png";
-  String soilAnalysis = "images/soil-analysis.png";
-  String power = "images/power.png";
+  String thermoMeterImage = "images/thermometer.png";
+  String humiditySensorImage = "images/humidity-sensor.png";
+  String soilAnalysisImage = "images/soil-analysis.png";      
   Field1Model? field1model;
   Field2Model? field2model;
   Field3Model? field3model;
