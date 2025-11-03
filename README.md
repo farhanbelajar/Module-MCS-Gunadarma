@@ -1,26 +1,31 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-# coba_8
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-=======
-# GUNADARMA-ASCL-MCS
-=======
 # GUNADARMA-ACSL-MCS
->>>>>>> 5db4e94 (Update README.md)
+
 ## Modul MCS ACSL
-Modul pembelajaran Mobile Computing System Lab Komputer Lanjut
->>>>>>> 80e04149cdafe1f4d56dfdf7a53edd4ad078537e
+
+Modul pembelajaran Mobile Computing System Lab Komputer Lanjut.
+
+**Deskripsi singkat:**
+Dalam modul ini saya (instruktur) mengajar cara membangun sebuah aplikasi secara praktis, termasuk cara mengambil data dari API, mengelola dan menggunakan database, serta integrasi dengan perangkat IoT. Materi dirancang agar peserta dapat mengembangkan aplikasi end-to-end yang terhubung dengan layanan backend dan perangkat fisik.
+
+---
+
+## 🎯 Tujuan Pembelajaran
+
+* Mengerti alur pengembangan aplikasi mobile/web dari konsep hingga implementasi.
+* Mampu melakukan request ke API dan memproses respons.
+* Mampu merancang dan menggunakan database untuk penyimpanan data aplikasi.
+* Memahami dasar-dasar integrasi IoT (mis. ESP32, sensor, komunikasi ke cloud).
+* Mampu menggabungkan front-end, back-end, dan perangkat IoT dalam sebuah sistem fungsional.
+
+---
+
+## 📚 Materi Utama
+
+1. Pengenalan arsitektur aplikasi (client-server, REST API, realtime).
+2. Pengambilan data dari API (HTTP requests, parsing JSON, error handling).
+3. Dasar-dasar dan praktek database (relasional & NoSQL, desain skema, CRUD).
+4. Pengantar IoT untuk aplikasi (ESP32/ESP8266, sensor dasar, pengiriman data).
+5. Integrasi Firebase / supabase / custom backend untuk realtime & storage.
+6. Deployment sederhana (publish API, setup hosting, build aplikasi).
+
+---
